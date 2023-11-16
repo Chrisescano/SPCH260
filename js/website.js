@@ -1,14 +1,25 @@
-const logoImgElement = document.getElementById("company-logo-img");
-const logicTechnology = document.getElementById("logic-tech-img");
-const specialtyTechnology = document.getElementById("specialty-tech-img");
-const threeDFabric = document.getElementById("three-d-fabric-img");
-const techPlatforms = document.getElementById("tech-platforms-img");
-
-const companyLogoScale = 0.3;
-const productListScale = 0.5;
+const imageInfo = [
+    {url: "images/TSMC-Logo-768x483.png", id: "company-logo-img", scale: 0.3},
+    {url: "images/technology_logic-710x480.jpg", id: "logic-tech-img", scale: 0.5},
+    {url: "images/technology_specialty-710x480.jpg", id: "specialty-tech-img", scale: 0.5},
+    {url: "images/technology_3DIC-710x480.jpg", id: "three-d-fabric-img", scale: 0.5},
+    {url: "images/technology_platform-710x480.jpg", id: "tech-platforms-img", scale: 0.5},
+    {url: "images/TSMC_Organization-1500x1636.png", id: "org-chart", scale: 0.5},
+    {url: "images/executives1.png", id: "executive1", scale: 0.6},
+    {url: "images/executives2.png", id: "executive2", scale: 0.6},
+    {url: "images/executives3.png", id: "executive3", scale: 0.6},
+    {url: "images/executives4.png", id: "executive4", scale: 0.6},
+    {url: "images/executives5.png", id: "executive5", scale: 0.6},
+    {url: "images/executives6.png", id: "executive6", scale: 0.6},
+    {url: "images/executives7.png", id: "executive7", scale: 0.6},
+    {url: "images/executives8.png", id: "executive8", scale: 0.6},
+    {url: "images/executives9.png", id: "executive9", scale: 0.6},
+    {url: "images/executives10.png", id: "executive10", scale: 0.6}
+]
 
 /*-----Functions-----*/
-function loadAndScaleImage(url, element, scale) {
+function loadAndScaleImage(url, id, scale) {
+    const element = document.getElementById(id);
     element.src = url;
     element.onload = function() {
         let width = element.width * scale;
@@ -20,8 +31,6 @@ function loadAndScaleImage(url, element, scale) {
 }
 
 /*-----Running Code-----*/
-loadAndScaleImage('images/TSMC-Logo-768x483.png', logoImgElement, companyLogoScale);
-loadAndScaleImage('images/technology_logic-710x480.jpg', logicTechnology, productListScale);
-loadAndScaleImage('images/technology_specialty-710x480.jpg', specialtyTechnology, productListScale);
-loadAndScaleImage('images/technology_3DIC-710x480.jpg', threeDFabric, productListScale);
-loadAndScaleImage('images/technology_platform-710x480.jpg', techPlatforms, productListScale);
+for(let i = 0; i < imageInfo.length; i++) {
+    loadAndScaleImage(imageInfo[i].url, imageInfo[i].id, imageInfo[i].scale);
+}

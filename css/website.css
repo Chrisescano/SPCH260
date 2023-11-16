@@ -72,10 +72,6 @@
     justify-content: center;
 }
 
-.overview-title {
-    text-align: center;
-}
-
 #overview, #vision-mission {
     display: inline-block;
     width: 40%;
@@ -93,4 +89,36 @@
     width: 0;
     min-width: 100%;
     font-size: var(--regular-text-size);
+}
+
+/*-----Core Values-----*/
+#core-values {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#core-values div {
+    display: inline-block;
+    width: 20%;
+}
+
+#core-values div p {
+    width: 0;
+    min-width: 100%;
+}
+
+/*-----Company Organization and Executives-----*/
+#company-structure {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#organization-chart, #executive-media {
+    display: inline-block;
+    max-width: min-content; 
+}
+
+/*-----Utility Styling-----*/
+.center-text {
+    text-align: center;
 }
