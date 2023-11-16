@@ -1,0 +1,44 @@
+:root {
+    --company-red: #e60012;
+    --company-dark-red: #9b1822;
+    --company-black: #221815;
+    --company-white: #ffffff;
+
+    --scale: 0.3;
+    --font-size: 30px;
+}
+
+/*----Website Header----*/
+#website-header {
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--company-dark-red);
+}
+
+.company-header-name {
+    color: var(--company-white);
+    font-family:monospace;
+    font-size: var(--font-size);
+    text-align: right;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#header-divider {
+    display: inline-block;
+    position: relative;
+    background-color: var(--company-red);
+
+    /*--fixed positions, not dynamic--*/
+    left: 15px;
+    top: 25px;
+    width: 2px;
+    height: 100px;
+}
+
+/*768 x 483*/
+#company-logo {
+    width: calc(768px * var(--scale));
+}
