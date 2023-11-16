@@ -4,7 +4,8 @@
     --company-black: #221815;
     --company-white: #ffffff;
 
-    --font-size: 30px;
+    --company-font-size: 30px;
+    --regular-text-size: 17px;
 }
 
 /*-----Website Header-----*/
@@ -18,7 +19,7 @@
 #company-header-name p {
     color: var(--company-white);
     font-family:monospace;
-    font-size: var(--font-size);
+    font-size: var(--company-font-size);
     text-align: right;
 
     margin-top: 0px;
@@ -51,5 +52,45 @@
 #product-list div p {
     width: 0;
     min-width: 100%;
-    font-size: 17px;
+    font-size: var(--regular-text-size)
+}
+
+/*-----Website Divider-----*/
+.website-divider {
+    display: inline-block;
+    position: relative;
+    background-color: var(--company-dark-red);
+    
+    left: 25%;
+    height: 15px;
+    width: 50%;
+}
+
+/*-----Company Overview-----*/
+#overview-vision-mission {
+    display: flex;
+    justify-content: center;
+}
+
+.overview-title {
+    text-align: center;
+}
+
+#overview, #vision-mission {
+    display: inline-block;
+    width: 40%;
+}
+
+#overview {
+    margin-right: 30px;
+}
+
+#vision-mission {
+    margin-left: 30px;
+}
+
+#overview p, #vision-mission p, #vision-mission li {
+    width: 0;
+    min-width: 100%;
+    font-size: var(--regular-text-size);
 }
