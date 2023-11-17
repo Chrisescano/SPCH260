@@ -105,20 +105,52 @@
 #core-values div p {
     width: 0;
     min-width: 100%;
+    font-size: var(--regular-text-size);
 }
 
 /*-----Company Organization and Executives-----*/
-#company-structure {
-    display: flex;
-    justify-content: space-evenly;
+#left-media-column, #right-media-column {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(10px, 1fr));
+    column-gap: 20px;
 }
 
-#organization-chart, #executive-media {
-    display: inline-block;
-    max-width: min-content; 
+#left-media-column div, #right-media-column div {
+    width: 240px;
+    height: 240px;
+}
+
+#middle-media-column {
+    justify-content: center;
+    margin-left: 20px;
+}
+
+#top-middle-column, #bottom-middle-column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#bottom-middle-extra {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+#top-middle-column div, #bottom-middle-column div, #bottom-middle-extra div {
+    width: 230px;
+    height: 230px;
+}
+
+#organization-chart {
+    margin-bottom: 98px;
 }
 
 /*-----Utility Styling-----*/
 .center-text {
     text-align: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
 }
