@@ -1,0 +1,84 @@
+:root {
+    --company-red: #e60012;
+    --company-dark-red: #9b1822;
+    --company-black: #221815;
+    --company-white: #ffffff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#brochure {
+    display: flex;
+    margin-top: 50px;
+}
+
+/*-----*/
+#left-panel, #right-panel {
+    width: 400px;
+}
+
+#left-panel {
+    background-color: var(--company-dark-red);
+}
+
+#right-panel p {
+    text-align: center;
+    color: var(--company-dark-red);
+}
+
+#right-panel-container {
+    border-top: 10px solid var(--company-dark-red);
+    border-right: 10px solid var(--company-dark-red);
+    border-bottom: 10px solid var(--company-dark-red);
+}
+
+/*-----*/
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.organization, .award {
+    padding-left: 6px;
+    padding-right: 6px;
+
+    margin-bottom: 0px;
+}
+
+#pr-contact, #business-contact {
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+#pr-contact div p, #business-contact div p {
+    margin: 0px;
+    color: var(--company-white)
+}
+
+#pr-contact p, #business-contact p {
+    margin-bottom: 0px;
+    color: wheat
+}
+
+#social-media-handles p {
+    text-align: right;
+    margin-bottom: 2px;
+    margin-right: 10px;
+    color: wheat;
+}
+
+#social-media-handles div {
+    display: flex;
+    justify-content: end;
+}
+
+#social-media-icons {
+    margin-top: 2px;
+    padding: 5px;
+    border-radius: 20px 0px 0px 20px;
+    background-color: var(--company-white);
+}
