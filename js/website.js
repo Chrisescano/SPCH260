@@ -1,9 +1,9 @@
 const imageInfo = [
     {url: "images/TSMC-Logo-768x483.png", id: "company-logo-img", scale: 0.3},
-    {url: "images/technology_logic-710x480.jpg", id: "logic-tech-img", scale: 0.5},
-    {url: "images/technology_specialty-710x480.jpg", id: "specialty-tech-img", scale: 0.5},
-    {url: "images/technology_3DIC-710x480.jpg", id: "three-d-fabric-img", scale: 0.5},
-    {url: "images/technology_platform-710x480.jpg", id: "tech-platforms-img", scale: 0.5},
+    {url: "images/technology_logic-710x480.jpg", id: "logic-tech-img", scale: 0.4},
+    {url: "images/technology_specialty-710x480.jpg", id: "specialty-tech-img", scale: 0.4},
+    {url: "images/technology_3DIC-710x480.jpg", id: "three-d-fabric-img", scale: 0.4},
+    {url: "images/technology_platform-710x480.jpg", id: "tech-platforms-img", scale: 0.4},
     {url: "images/TSMC_Organization-1500x1636.png", id: "org-chart", scale: 0.5},
     {url: "images/executives/1-dr-mark-liu.png", id: "exec1", scale: 0.5},
     {url: "images/executives/2-dr-cc-wei.png", id: "exec2", scale: 0.5},

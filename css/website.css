@@ -41,7 +41,7 @@
 /*-----Product List-----*/
 #product-list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 25px;
 }
 
@@ -77,14 +77,6 @@
     width: 40%;
 }
 
-#overview {
-    margin-right: 30px;
-}
-
-#vision-mission {
-    margin-left: 30px;
-}
-
 #overview p, #vision-mission p, #vision-mission li {
     width: 0;
     min-width: 100%;
@@ -93,59 +85,27 @@
 
 /*-----Core Values-----*/
 #core-values {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#core-values div {
-    display: inline-block;
-    width: 20%;
-}
-
-#core-values div p {
-    width: 0;
-    min-width: 100%;
-    font-size: var(--regular-text-size);
+    width: 75%;
 }
 
 /*-----Company Organization and Executives-----*/
-#left-media-column, #right-media-column {
+#media {
     display: grid;
-    grid-template-columns: repeat(2, minmax(10px, 1fr));
-    column-gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
 }
 
-#left-media-column div, #right-media-column div {
-    width: 240px;
-    height: 240px;
-}
-
-#middle-media-column {
-    justify-content: center;
-    margin-left: 20px;
-}
-
-#top-middle-column, #bottom-middle-column {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-#bottom-middle-extra {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-}
-
-#top-middle-column div, #bottom-middle-column div, #bottom-middle-extra div {
-    width: 230px;
-    height: 230px;
+#media div {
+    text-align: center;
 }
 
 #organization-chart {
-    margin-bottom: 98px;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 7;
 }
 
-/*-----Utility Styling-----*/
+/*-----Utility-----*/
 .center-text {
     text-align: center;
 }
@@ -153,4 +113,16 @@
 .flex-center {
     display: flex;
     justify-content: center;
+}
+
+.card-layout {
+    border: 2px solid var(--company-black);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: bold;
 }
